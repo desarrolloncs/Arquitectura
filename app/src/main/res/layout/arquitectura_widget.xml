@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWidgetFondo"
     android:padding="@dimen/widget_margin">
 
 
@@ -14,7 +15,8 @@
             android:layout_width="0dp"
             android:layout_height="96dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_person_black_24dp" />
+            android:src="@drawable/ic_person_black_24dp"
+            />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -27,9 +29,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:textSize="24sp"
+                android:textAppearance="@android:style/TextAppearance.Large"
                 android:text="@string/WidgetLinea1"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorWidgetTexto"
                 android:gravity="center"
                 />
 
@@ -38,8 +40,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/WidgetLinea2"
-                android:textSize="24sp"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorWidgetTexto"
                 android:gravity="center"/>
 
         </LinearLayout>
