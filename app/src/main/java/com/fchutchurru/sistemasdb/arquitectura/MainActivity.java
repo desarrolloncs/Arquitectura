@@ -1,7 +1,11 @@
 package com.fchutchurru.sistemasdb.arquitectura;
 
+import android.graphics.Color;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -9,5 +13,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void notificar(View view){
+
+        Snackbar snackbar= Snackbar.make(view,"Debes Recuperar tu cuenta",Snackbar.LENGTH_LONG)
+                .setAction("Recuperar", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Toast.makeText(MainActivity.this,"Se ha enviado ingformacion de recuperacion a su cuenta de Email", Toast.LENGTH_LONG).show();
+                    }
+                });
+        snackbar.setActionTextColor(Color.GREEN);
+        View snackBarView = snackbar.getView();
+        snackBarView.setBackgroundColor(Color.BLUE);
+        snackbar.show();
+
     }
 }

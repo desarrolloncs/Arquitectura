@@ -40,14 +40,13 @@
         android:layout_below="@id/contraseña">
 
 
-
         <Button
             android:id="@+id/recuperarContraseña"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/btnDatos"
-            />
+            android:onClick="BtnOlvideDatos"
+            android:text="@string/btnDatos" />
 
         <Button
             android:id="@+id/aceptar"
