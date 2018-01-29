@@ -4,4 +4,8 @@
     <string name="add_widget">Add widget</string>
     <string name="WidgetLinea2">Nombre de Usuarios</string>
     <string name="WidgetLinea1">Gestor de Diseños</string>
+    <string name="usuario">Escribe tu nombre de usuario</string>
+    <string name="contraseña">Escribe tu contraseña</string>
+    <string name="btnDatos">OLVIDE MIS DATOS</string>
+    <string name="loggin">INICIAR SESION</string>
 </resources>
