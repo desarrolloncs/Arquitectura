@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this,"Se ha enviado ingformacion de recuperacion a su cuenta de Email", Toast.LENGTH_LONG).show();
                     }
                 });
-        snackbar.setActionTextColor(Color.GREEN);
+        snackbar.setActionTextColor(Color.argb(255,0,255,255));
         View snackBarView = snackbar.getView();
-        snackBarView.setBackgroundColor(Color.BLUE);
+        snackBarView.setBackgroundColor(Color.argb(255,181,63,171));
         snackbar.show();
 
     }
