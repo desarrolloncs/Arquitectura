@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.i("creado","se ejecutó el método onCreate() en actividad Main (Login)");
     }
 
     public void notificar(View view){
@@ -52,5 +54,17 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), Galeria.class);
             startActivity(intent);
         }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("inicio","se ejecutó el método onStart() en actividad Main (Login)");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("resumido","se ejecutó el método onResume() en actividad Main (Login)");
     }
 }
